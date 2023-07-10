@@ -1,0 +1,31 @@
+{
+  "short_name": "Crumble",
+  "name": "Stim Crumble",
+  "description": "This widget enables using Crumble to test mark placement",
+  "maintainer": {
+    "name": "Auguste Hirth",
+    "email": "augusteh@google.com"
+  },
+  "version": "0.0.1",
+  "sandbox": "allow-scripts allow-same-origin allow-forms",
+  "macros": [],
+  "authorizations": {},
+  "actionTypes": [],
+  "configurationExamples": [
+    {
+      "name": "Exercise X: Some aspect of propagation",
+      "description": "The correct answer is some set of marks in a circuit",
+      "configuration": {
+		"circuit": "QUBIT_COORDS(0, 0) 0\nQUBIT_COORDS(0.5, 0.5) 1\nX 0\nTICK\nTICK\nH 1\nCX 0 1\nTICK\nM 0 1",
+		"initIndex":1
+      }
+    }
+  ],
+  "accessibility": {
+    "mobileCompatibility": {
+      "supportsTouch": false,
+      "minHeightPx": 0,
+      "minWidthPx": 0
+    }
+  }
+}
