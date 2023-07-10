@@ -1,0 +1,3 @@
+[submodule "Stim"]
+	path = Stim
+	url = https://github.com/quantumlib/Stim.git
