@@ -10,7 +10,9 @@
   "sandbox": "allow-scripts allow-same-origin allow-forms",
   "macros": [],
   "authorizations": {},
-  "actionTypes": [],
+  "actionTypes": [
+    "GET_SESSION_CONFIGURATION"
+  ],
   "configurationExamples": [
     {
       "name": "Exercise X: Some aspect of propagation",
