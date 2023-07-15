@@ -1,7 +1,7 @@
 set -e
 mkdir -p build
-rm -r build/*
-cp index.html build
+find build -path 'build/[!.]*' -prune -exec rm -r -- {} +
+cp Stim/glue/crumble/crumble.html build/index.html
 rollup -c rollup.config.main.js
 cp manifest.no_grader.json build/manifest.json
 (cd build && zip ../crumble-no-grader-plugin.zip * -x grader.js)
